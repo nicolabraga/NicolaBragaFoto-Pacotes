@@ -250,6 +250,19 @@
     .contact{padding:28px 18px;}
     .contact-ctas .btn{padding:14px 22px;}
   }
+
+  /* ===== Hero com foto em destaque ===== */
+  .hero{
+    min-height:clamp(780px,100vh,920px);
+    align-items:flex-end;
+    background:linear-gradient(180deg, rgba(11,18,32,0) 55%, #0b1220 100%), url('hero.jpg') right 30%/cover no-repeat;
+    background-color:#0b1220;
+  }
+  .hero-inner{padding:120px 24px 0;margin-bottom:-30px;}
+  @media (max-width:860px){
+    .hero{min-height:660px;background:linear-gradient(180deg, rgba(11,18,32,0) 25%, rgba(11,18,32,.82) 62%, var(--navy) 100%), url('hero.jpg') 92% center/cover no-repeat;}
+    .hero-inner{padding:90px 20px 8px;margin-bottom:0;}
+  }
 </style>
 </head>
 <body>
